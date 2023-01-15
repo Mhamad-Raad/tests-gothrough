@@ -12,6 +12,7 @@ export default function Geeting() {
       <h1>Hello World</h1>
       {!available && <p>it is good to see you</p>}
       {available && <p>Changed</p>}
+      <button onClick={reverseAvailable}>Reverse</button>
     </>
   );
 }
