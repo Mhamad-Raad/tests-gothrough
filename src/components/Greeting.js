@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Geeting() {
+export default function Greeting() {
   const [available, setAvailable] = useState(false)
 
   const reverseAvailable = () => {
