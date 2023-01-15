@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Geeting() {
+  const [available, setAvailable] = useState(false)
+
+  const reverseAvailable = () => {
+    setAvailable(!available)
+  }
+
   return (
     <>
       <h1>Hello World</h1>
-      <p>it is good to see you</p>
+      {!available && <p>it is good to see you</p>}
+      {available && <p>Changed</p>}
     </>
   );
 }
